@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Ajouter des Prix</title>
+</head>
+<body>
+    <form id="prix-container">
+        <div>
+            <input type="text" name="nomProduit[]" placeholder="Nom du produit" required>
+            <input type="number" name="montant[]" placeholder="Montant" required>
+            <button type="button" onclick="supprimerPrix(this)">Supprimer</button>
+        </div>
+    </form>
+    <button type="button" onclick="ajouterPrix()" id="ajouterBtn" disabled>Ajouter un autre</button>
+
+    <script>
+        function ajouterPrix() {
+            const container = document.getElementById('prix-container');
+            const newPrix = document.createElement('div');
+            newPrix.innerHTML = `
+                <input type="text" name="nomProduit[]" placeholder="Nom du produit" required>
+                <input type="number" name="montant[]" placeholder="Montant" required>
+                <button type="button" onclick="supprimerPrix(this)">Supprimer</button>
+            `;
+            container.appendChild(newPrix);
+        }
+
+        function supprimerPrix(btn) {
+            const div = btn.parentElement;
+            div.parentNode.removeChild(div);
+        }
+
+        // Vérification des champs avant d'autoriser l'ajout
+        document.addEventListener('input', function() {
+            const inputs = document.querySelectorAll('input[name="nomProduit[]"], input[name="montant[]"]');
+            let champsRemplis = true;
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    champsRemplis = false;
+                }
+            });
+            const btnAjouter = document.getElementById('ajouterBtn');
+            btnAjouter.disabled = !champsRemplis;
+        });
+    </script>
+</body>
+</html>

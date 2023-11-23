@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{{ route('evenements.store') }}" method="post">
+        @csrf
+
+        <!-- Vos autres champs d'événement ici -->
+
+        <div id="prix-container">
+            <!-- Les champs de prix seront ajoutés ici -->
+        </div>
+
+        <button type="button" onclick="ajouterPrix()">Ajouter un prix</button>
+
+        <button type="submit">Enregistrer</button>
+    </form>
+
+    <script>
+        let prixCounter = 0;
+
+        function ajouterPrix() {
+            prixCounter++;
+
+            const prixContainer = document.getElementById('prix-container');
+
+            const inputNom = document.createElement('input');
+            inputNom.type = 'text';
+            inputNom.placeholder = 'Nom du prix';
+
+            const inputMontant = document.createElement('input');
+            inputMontant.type = 'number';
+            inputMontant.name = 'prix';
+            inputMontant.placeholder = 'Montant';
+            inputMontant.id = 'prix';
+
+            const divPrix = document.createElement('div');
+            divPrix.appendChild(inputNom);
+            divPrix.appendChild(inputMontant);
+
+            prixContainer.appendChild(divPrix);
+            updateMontant();
+        }
+
+        function updateMontant() {
+            const prixMontant = document.getElementById('prix');
+            const montants = document.querySelectorAll('input[name="prix"]');
+
+            let montantMin = Number.MAX_SAFE_INTEGER;
+
+            montants.forEach(function (montant) {
+                const valeurMontant = parseFloat(montant.value);
+
+                if (!isNaN(valeurMontant) && valeurMontant < montantMin) {
+                    montantMin = valeurMontant;
+                }
+            });
+
+            prixMontant.value = montantMin;
+        }
+
+        // Appeler la fonction une fois que la page a été chargée
+        window.onload = ajouterPrix;
+    </script>
+
+    </script>
+    
+
+
+</body>
+</html>

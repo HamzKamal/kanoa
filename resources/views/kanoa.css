@@ -1,0 +1,435 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*Authentification*/
+
+#authentification h1{
+display: flex;
+width: 280px;
+height: 50px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #FFF;
+font-family: 'Open Sans';
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin: 10px auto;
+}
+
+#authentification input[name="Email"]
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 300px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+margin-left:25px;
+padding:10px;
+}
+#Email
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 350px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+margin:auto;
+}
+input::placeholder 
+{
+    color: white;
+    opacity: 1;
+}
+#authentification input[name="Prenom"]
+{
+    display: flex;
+    width: 120px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color:white;  
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding:10px;
+    margin:auto;
+}
+
+#Prenom{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 170px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+
+}
+
+#authentification input[name="Nom"]
+{
+    display: flex;
+    width: 120px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color:white;  
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding:10px;
+    margin:auto;
+}
+
+#Nom{
+display: flex;
+flex-direction: column;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 170px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+
+margin-left:10px;
+}
+.center-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.correction
+{
+    display: flex;
+    justify-content: center;
+    
+    height: 10vh;
+    margin: 0;
+}
+#authentification input[name="Naissance"]
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 270px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+margin-left:25px;
+padding:10px;
+float:left;
+}
+#Naissance
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 350px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+margin:auto;
+
+}
+#authentification input[name="Passeword"]
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 270px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+margin-left:25px;
+padding:10px;
+float:left;
+}
+#Passeword
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 350px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+margin: 7px auto;
+}
+#authentification input[name="ConfPass"]
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 270px;
+height: 40px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+margin-left:25px;
+padding:10px;
+float:left;
+}
+#ConfPass
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 350px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+margin: 7px auto;
+}
+#authentification input[type="checkbox"]
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 20px;
+height: 20px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+padding:10px;
+float:left;
+}
+#check
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 350px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+border:none;
+margin: 7px auto;
+padding:10px;
+}
+#ecriture
+{
+color: #889CBD;
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+#authentification input[type="checkbox"]
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 20px;
+height: 20px;
+flex-shrink: 0;
+border-radius: 4px;
+color:white;
+background: #1A2535;
+border:none;
+padding:10px;
+float:left;
+}
+#authentification input[name="Submit"]
+{
+display: flex;
+font-weight: 400;
+line-height: normal;
+flex-shrink: 0;
+border-radius: 4px;
+background: #0063FF;
+border:none;
+margin-left:25px;
+padding:10px;
+display: flex;
+width: 330px;
+height: 70px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-family: 'Open Sans';
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align:center;
+padding-left:120px;
+cursor:pointer;
+margin:auto
+}
+#Submit
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+font-family: 'Open Sans';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+flex-shrink: 0;
+color:white;
+border-radius: 4px;
+background: #0063FF;
+border:none;
+margin: 7px auto;
+width: 330px;
+height: 70px;
+flex-shrink: 0;
+}
+#authentification input[name="Submit"]:hover
+{
+background-color: rgb(182, 16, 173);
+color:rgb(0, 0, 0);
+}
+#check2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 350px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    color:white;
+    border:none;
+    margin: 7px auto;
+    padding:10px; 
+}
+a{
+    text-decoration:none;
+}
+
+
